@@ -25,7 +25,8 @@ function stopGame() {
 
     timer.textContent = ""
 
-    
+    quiz.style.display = 'none';
+    result.style.display = 'flex';
 
 
 }
