@@ -27,6 +27,20 @@ function stopGame() {
 
 
 
+function displayQuestion() {  
+
+
+    currentQuestion++;
+
+    console.log('the current question is' + currentQuestion);
+
+    if(currentQuestion >= questions.length) {
+        stopGame();
+        return;
+    }
+
+  }
+
 
 function onStartGame() {
     secondsLeft=75;
