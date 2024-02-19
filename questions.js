@@ -1,4 +1,4 @@
-var questions = [
+var questions = (
 {
     title: 'What is my favourite animal?',
     choices: ['Jellyfish', 'Llama', 'Squirrel', 'Popcorn'],
@@ -16,7 +16,7 @@ var questions = [
     choices: ['Douglas Adams', 'Terry Pratchett', 'You', 'Sargent Terry Jeffords of the 99th Precinct'],
     answer: 'Douglas Adams',
 }
-];
+)
 
 
 //clear interval to stop the timer
