@@ -1,3 +1,5 @@
+addEventListener("DOMContentLoaded", (event) => {})
+
 var startQuizEl = document.getElementById("startQuiz")
 var welcomeEl = document.getElementById("welcome")
 var quizEl = document.getElementById("quiz")
@@ -41,6 +43,9 @@ function displayQuestion() {
 
   }
 
+  var question = questions[currentQuestion];
+  document.getElementById("question").textContent = question.title;
+
 
 function onStartGame() {
     secondsLeft=75;
@@ -57,6 +62,8 @@ function onStartGame() {
 }
 
 startQuiz.addEventListener("click", onStartGame);
+
+addEventListener("click", displayQuestion);
 
 welcomeEl.style.display = 'none';
 quizEl.style.display = 'flex';
