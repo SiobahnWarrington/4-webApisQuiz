@@ -9,6 +9,7 @@ var messageEl = document.getElementById("message")
 var timerEl = document.getElementById("timer")
 var summaryEl = document.getElementById("summary")
 
+var questions = []
 var secondsLeft = 0;
 var score = 0;
 var currentQuestion = 0;
